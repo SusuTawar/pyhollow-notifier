@@ -10,6 +10,7 @@ socketio-client = "*"
 youtube-dl = "*"
 python-socketio = {extras = ["asyncio-client"], version = "*"}
 aiohttp = "*"
+requests = "*"
 
 [requires]
 python_version = "3.8"

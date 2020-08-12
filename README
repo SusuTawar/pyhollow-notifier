@@ -1,0 +1,21 @@
+# Hollow Notifier
+(sort of) semi-automatic youtube live downloader. download as they're live
+
+## How to ?
+- download and extract the release
+- in extracted folder, run `python setup.py install` and wait
+- from the same folder use `python hollownotifier` to run the program
+
+## Choose Vtuber to download
+- open config/subs.csv
+- add or remove VTuber name from the list
+- no space around coma (,)
+- currently supported vtuber listed at config/def_ch.csv
+
+## Change youtube-dl options
+- open config/ytdl.conf
+- change accordingly (link)[https://github.com/ytdl-org/youtube-dl/blob/master/README.md#options]
+
+## what next ?
+- updating config/def_ch.csv
+- better & friendly way to configure
