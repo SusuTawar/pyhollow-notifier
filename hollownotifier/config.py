@@ -13,7 +13,7 @@ def read_ch():
 
 
 def add_ch(group, member):
-    res = request('GET',f'{host}:3000/list')
+    res = request('GET',f'{host}/list')
     if res.ok:
         data = res.json()
         write_default_channels(data,'hollownotifier/config/def_ch.csv');

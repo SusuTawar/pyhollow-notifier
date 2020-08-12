@@ -5,8 +5,7 @@ from config import read_ch
 from subprocess import Popen
 
 loop = asyncio.get_event_loop()
-hn_host = 'http://localhost'
-sio_port = 4000
+hn_host = 'https://hollow-notifier.glitch.me/'
 
 
 async def main():
@@ -54,7 +53,7 @@ async def main():
                 except Exception as e:
                     print(e)
 
-    await sio.connect(f'{hn_host}:{sio_port}/', namespaces=namespaces)
+    await sio.connect(f'{hn_host}/', namespaces=namespaces)
     await sio.wait()
 
 
